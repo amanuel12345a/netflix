@@ -1,0 +1,13 @@
+@media (max-width: 650px){
+    nav{
+        padding: 0 !important;
+    }
+    .links{
+        gap: 1rem !important;
+        padding-left: 10vw;
+    }
+    
+    .left{
+        display: block;
+    }
+}

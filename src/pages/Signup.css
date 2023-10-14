@@ -1,0 +1,15 @@
+@media (max-width:760px){
+    .column h1{
+        padding: 2rem !important; 
+    }
+    .text{
+        font-size: 1.5rem !important;
+    }
+    .form input{
+        padding: 10px !important;
+        display: block !important;
+    }
+    .form {
+        display: block !important;
+    }
+}

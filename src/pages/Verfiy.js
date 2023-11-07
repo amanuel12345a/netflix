@@ -7,9 +7,10 @@ function Verfiy() {
     const params = useParams()
     const navigate = useNavigate();
     const {id} = params
+    let a ;
     useEffect(()=>{
         const verify = async () => {
-            const a = await axios.get(`https://aman-netflix.onrender.com/${id}`)
+             a = await axios.get(`https://aman-netflix.onrender.com/${id}`)
             if(a.data)
             {
                 navigate('/login');

@@ -1,17 +1,17 @@
-import {
-  createUserWithEmailAndPassword,
-  onAuthStateChanged,
-} from "firebase/auth";
+// import {
+//   createUserWithEmailAndPassword,
+//   onAuthStateChanged,
+// } from "firebase/auth";
 import './Signup.css'
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import BackgroundImage from "../components/BackgroundImage";
 import Header from "../components/Header";
-import { firebaseAuth } from "../utils/firebase-config";
+// import { firebaseAuth } from "../utils/firebase-config";
 import axios from "axios";
 function Signup() {
-  const url = "http://localhost:8081/signup"
+  const url = "https://aman-netflix.onrender.com/signup"
   const [showPassword, setShowPassword] = useState(false);
   const [formValues, setFormValues] = useState({
     email: "",

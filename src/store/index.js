@@ -82,7 +82,7 @@ import {
     async (email) => {
       const {
         data: { movies },
-      } = await axios.get(`http://localhost:8081/api/user/liked/${email}`);
+      } = await axios.get(`https://aman-netflix.onrender.com/api/user/liked/${email}`);
       return movies;
     }
   );
@@ -92,7 +92,7 @@ import {
     async ({ movieId, email }) => {
       const {
         data: { movies },
-      } = await axios.put("http://localhost:8081/api/user/remove", {
+      } = await axios.put("https://aman-netflix.onrender.com/api/user/remove", {
         email,
         movieId,
       });

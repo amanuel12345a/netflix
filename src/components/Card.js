@@ -18,7 +18,7 @@ export default React.memo(function Card({ index, movieData, isLiked = false }) {
   const dispatch = useDispatch();
   const [isHovered, setIsHovered] = useState(false);
   const [email, setEmail] = useState(undefined);
-  const url = "http://localhost:8081/api/user/add"
+  const url = "https://aman-netflix.onrender.com/api/user/add"
 
   // onAuthStateChanged(firebaseAuth, (currentUser) => {
   //   if (currentUser) {

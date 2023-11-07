@@ -11,7 +11,7 @@ import axios from "axios";
 import './Login.css'
 
 function Login() {
-  const url = "http://localhost:8081/login"
+  const url = "https://aman-netflix.onrender.com/login"
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error,setError] = useState("")

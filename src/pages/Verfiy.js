@@ -7,7 +7,14 @@ function Verfiy() {
     const params = useParams()
     const {id} = params
     useEffect(()=>{
-        axios.get(`https://aman-netflix.onrender.com/${id}`)
+        const verify = async () => {
+            const a = await axios.get(`https://aman-netflix.onrender.com/${id}`)
+            if(a)
+            {
+                console.log(a)
+            }
+        }
+        verify()
     },[])
     
 

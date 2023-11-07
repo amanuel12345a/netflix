@@ -20,7 +20,7 @@ function Verfiy() {
             }
         }
         verify()
-    },[])
+    })
     
 
     // console.log(params)

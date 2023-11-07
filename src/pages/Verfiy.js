@@ -14,10 +14,10 @@ function Verfiy() {
              a = await axios.get(`https://aman-netflix.onrender.com/${id}`)
              b = a.data
              console.log(b)
-            // if(a.data)
-            // {
-            //     navigate('/login');
-            // }
+            if(b)
+            {
+                navigate('/login');
+            }
         }
         verify()
     },[])
@@ -26,7 +26,7 @@ function Verfiy() {
     // console.log(params)
   return (
     <div>
-        
+        verifing
       {/* {a.data ? <div> verified</div>: <div>
         verifing
       </div>} */}

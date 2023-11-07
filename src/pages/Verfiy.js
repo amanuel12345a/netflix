@@ -6,9 +6,10 @@ import { useParams } from 'react-router-dom';
 function Verfiy() {
     // axios.get('https://aman-netflix.onrender.com')
     const params = useParams()
+    console.log(params)
   return (
     <div>
-        {params}
+        
       verified
     </div>
   )

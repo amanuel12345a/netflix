@@ -8,13 +8,16 @@ function Verfiy() {
     const navigate = useNavigate();
     const {id} = params
     let a ;
+    let b;
     useEffect(()=>{
         const verify = async () => {
              a = await axios.get(`https://aman-netflix.onrender.com/${id}`)
-            if(a.data)
-            {
-                navigate('/login');
-            }
+             b = a.data
+             console.log(b)
+            // if(a.data)
+            // {
+            //     navigate('/login');
+            // }
         }
         verify()
     },[])
@@ -24,9 +27,9 @@ function Verfiy() {
   return (
     <div>
         
-      {a.data ? <div> verified</div>: <div>
+      {/* {a.data ? <div> verified</div>: <div>
         verifing
-      </div>}
+      </div>} */}
     </div>
   )
 }

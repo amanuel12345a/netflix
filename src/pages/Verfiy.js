@@ -29,7 +29,7 @@ function Verfiy() {
   return (
     <div>
         verifing
-        if it didn't let you go to login page <p onClick={click()} className='underline'>click here</p> 
+        if it didn't let you go to login page <p onClick={()=>click()} className='underline'>click here</p> 
       {/* {a.data ? <div> verified</div>: <div>
         verifing
       </div>} */}
